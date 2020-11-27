@@ -4,6 +4,7 @@
 	<title>Personal Information Form</title>
 </head>
 <body>
+<form action="/action_page.php" method="post">
 	<table border="1">
 		<thead>
 			<tr>
@@ -13,7 +14,7 @@
 		<tbody>
 			<tr>
 				<td align="center" rowspan="3">
-					<img src="google.png"><br>personal photo
+					<img src="personal photo.png" width="225" height="225"><br>personal photo
 				</td>
 				<td colspan="2">
 					<label for="name">Name:</label>
@@ -33,7 +34,13 @@
 					<select name="county" id="county">
 						<option value="taipei">Taipei</option>
 						<option value="taoyuan">Taoyuan</option>
-
+						<option value="hsinchu">Hsinchu</option>
+						<option value="taichung">Taichung</option>
+						<option value="changhua">Changhua</option>
+						<option value="chiayi">Chiayi</option>
+						<option value="kaohsiung">Kaohsiung</option>
+						<option value="pingttung">Pingtung</option>
+						<option value="taitung">Taitung</option>
 					</select>
 				</td>
 				<td>
@@ -44,7 +51,7 @@
 			<tr>
 				<td colspan="2">
 					<label for="email">E-mail:
-						<input type="email" required />
+						<input type="email" required="required">
 					</label>
 				</td>
 			</tr>
@@ -93,6 +100,6 @@
 			</tr>
 		</tbody>
 	</table>
-
+</form>
 </body>
 </html>
